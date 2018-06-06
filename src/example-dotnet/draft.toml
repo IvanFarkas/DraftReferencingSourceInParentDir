@@ -1,0 +1,15 @@
+[environments]
+  [environments.development]
+    name = "example-dotnet"
+    registry = "docker.io/ivanfarkas"
+    namespace = "default"
+    container-builder = "docker"
+    resource-group-name = "k8sDemo"
+    set = ["foo=bar", "car=star"]
+    wait = true
+    watch = false
+    watch-delay = 2
+    auto-connect = false
+    custom-tags = ["latest", "frontend-dev"]
+    dockerfile = ""
+    chart = ""
